@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Bestie! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2"></script>
+</head>
+<body>
+
+    <h1>🎂 Happy Birthday, Bestie! 🎉</h1>
+    <button onclick="showMessage()">Click for a Surprise!</button>
+    <p id="message">🎊 Wishing you the happiest birthday ever! 🎊</p>
+
+    <audio id="birthdayMusic" autoplay loop>
+        <source src="your-music-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button onclick="toggleMusic()">🎵 Play/Pause Music</button>
+
+    <h2>How Well Do You Know Me? 🤔</h2>
+    <div id="quiz">
+        <p>What is my favorite color?</p>
+        <button onclick="checkAnswer(this, 'red')">Red</button>
+        <button onclick="checkAnswer(this, 'blue')">Blue</button>
+        <button onclick="checkAnswer(this, 'green')">Green</button>
+        <button onclick="checkAnswer(this, 'yellow')">Yellow</button>
+        <p id="result1"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
